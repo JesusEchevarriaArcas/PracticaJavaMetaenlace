@@ -14,7 +14,7 @@ public class MedicoDTO extends UsuarioDTO{
 
 
     private String numColegiado;
-    private ArrayList<Paciente> pacientesId = new ArrayList<>();
-    private ArrayList<Cita> citasId = new ArrayList<>();
+    //private ArrayList<Paciente> pacientesId = new ArrayList<>();
+   // private ArrayList<Cita> citasId = new ArrayList<>();
 
 }

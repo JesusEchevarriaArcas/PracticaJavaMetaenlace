@@ -14,15 +14,15 @@ public interface UsuarioMapper {
 
     UsuarioMapper INSTANCE = Mappers.getMapper(UsuarioMapper.class);
 
-    @Mapping(source = "id", target = "id")
-    @Mapping(source = "nombre", target = "nombre")
-    @Mapping(source = "apellidos", target = "apellidos")
-    @Mapping(source = "clave", target = "clave")
+//    @Mapping(source = "id", target = "id")
+//    @Mapping(source = "nombre", target = "nombre")
+//    @Mapping(source = "apellidos", target = "apellidos")
+//    @Mapping(source = "clave", target = "clave")
     UsuarioDTO usuarioToUsuarioDTO(Usuario usuario);
 
-    @Mapping(source = "id", target = "id")
-    @Mapping(source = "nombre", target = "nombre")
-    @Mapping(source = "apellidos", target = "apellidos")
-    @Mapping(source = "clave", target = "clave")
+//    @Mapping(source = "id", target = "id")
+//    @Mapping(source = "nombre", target = "nombre")
+//    @Mapping(source = "apellidos", target = "apellidos")
+//    @Mapping(source = "clave", target = "clave")
     Usuario usuarioDTOToUsuario(UsuarioDTO usuarioDTO);
 }

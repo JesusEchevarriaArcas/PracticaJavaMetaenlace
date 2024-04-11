@@ -9,6 +9,7 @@ com\example\practicaJava\mapper\MedicoMapper.class
 com\example\practicaJava\controladores\PacienteController.class
 com\example\practicaJava\modelo\Cita$CitaBuilder.class
 com\example\practicaJava\servicios\DiagnosticoService.class
+com\example\practicaJava\PracticaJavaApplication$1.class
 com\example\practicaJava\DTO\DiagnosticoDTO.class
 com\example\practicaJava\DTO\UsuarioDTO.class
 com\example\practicaJava\mapper\MedicoMapperImpl.class

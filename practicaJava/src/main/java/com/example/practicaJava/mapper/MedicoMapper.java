@@ -13,13 +13,13 @@ public interface MedicoMapper {
 
     MedicoMapper INSTANCE = Mappers.getMapper(MedicoMapper.class);
 
-    @Mapping(source = "pacientes", target = "pacientesId")
-    @Mapping(source = "citas", target = "citasId")
+//    @Mapping(source = "pacientes", target = "pacientesId")
+//    @Mapping(source = "citas", target = "citasId")
 
     MedicoDTO medicoToMedicoDTO(Medico medico);
 
-    @Mapping(source = "pacientesId", target = "pacientes")
-    @Mapping(source = "citasId", target = "citas")
+//    @Mapping(source = "pacientesId", target = "pacientes")
+//    @Mapping(source = "citasId", target = "citas")
     Medico medicoDTOToMedico(MedicoDTO medicoDTO);
 }
 

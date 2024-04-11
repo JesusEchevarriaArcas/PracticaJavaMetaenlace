@@ -1,17 +1,13 @@
 package com.example.practicaJava.mapper;
 
 import com.example.practicaJava.DTO.PacienteDTO;
-import com.example.practicaJava.modelo.Cita;
-import com.example.practicaJava.modelo.Medico;
 import com.example.practicaJava.modelo.Paciente;
-import java.util.ArrayList;
-import java.util.List;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-03-18T13:15:39+0100",
+    date = "2024-04-10T14:43:34+0200",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.2 (Oracle Corporation)"
 )
 @Component
@@ -25,14 +21,6 @@ public class PacienteMapperImpl implements PacienteMapper {
 
         PacienteDTO pacienteDTO = new PacienteDTO();
 
-        List<Medico> list = paciente.getMedicos();
-        if ( list != null ) {
-            pacienteDTO.setMedicos( new ArrayList<Medico>( list ) );
-        }
-        List<Cita> list1 = paciente.getCitasPaciente();
-        if ( list1 != null ) {
-            pacienteDTO.setCitas( new ArrayList<Cita>( list1 ) );
-        }
         pacienteDTO.setId( paciente.getId() );
         pacienteDTO.setNombre( paciente.getNombre() );
         pacienteDTO.setApellidos( paciente.getApellidos() );
@@ -53,14 +41,6 @@ public class PacienteMapperImpl implements PacienteMapper {
 
         Paciente paciente = new Paciente();
 
-        ArrayList<Medico> arrayList = pacienteDTO.getMedicos();
-        if ( arrayList != null ) {
-            paciente.setMedicos( new ArrayList<Medico>( arrayList ) );
-        }
-        ArrayList<Cita> arrayList1 = pacienteDTO.getCitas();
-        if ( arrayList1 != null ) {
-            paciente.setCitasPaciente( new ArrayList<Cita>( arrayList1 ) );
-        }
         paciente.setId( pacienteDTO.getId() );
         paciente.setNombre( pacienteDTO.getNombre() );
         paciente.setApellidos( pacienteDTO.getApellidos() );

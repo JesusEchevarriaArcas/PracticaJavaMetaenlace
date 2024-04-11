@@ -20,8 +20,8 @@ public class PacienteDTO extends UsuarioDTO{
         private String numTarjeta;
         private String telefono;
         private String direccion;
-        private ArrayList<Medico> medicos =new ArrayList<>();
-        private ArrayList<Cita> citas  = new ArrayList<>();
+//        private ArrayList<Medico> medicos =new ArrayList<>();
+//        private ArrayList<Cita> citas  = new ArrayList<>();
 
     }
 

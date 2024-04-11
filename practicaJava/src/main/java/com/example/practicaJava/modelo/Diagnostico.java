@@ -21,7 +21,8 @@ public class Diagnostico {
     private String enfermedad;
 
 
-    @OneToOne
+
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cita_id", unique = true)
     private Cita cita;
 }

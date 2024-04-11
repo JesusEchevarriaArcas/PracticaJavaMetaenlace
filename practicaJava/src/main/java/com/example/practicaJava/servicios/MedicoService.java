@@ -41,8 +41,8 @@ public class MedicoService implements MedicoInterface {
         Medico existingMedico = medicoRepository.findById(id).orElse(null);
         if (existingMedico != null) {
             existingMedico.setNumColegiado(medicoDTO.getNumColegiado());
-            existingMedico.setPacientes(medicoDTO.getPacientesId());
-            existingMedico.setCitas(medicoDTO.getCitasId());
+//            existingMedico.setPacientes(medicoDTO.getPacientesId());
+//            existingMedico.setCitas(medicoDTO.getCitasId());
             return medicoMapper.medicoToMedicoDTO(medicoRepository.save(existingMedico));
         }
         return null;

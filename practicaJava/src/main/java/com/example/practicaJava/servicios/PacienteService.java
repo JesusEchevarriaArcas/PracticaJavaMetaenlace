@@ -44,8 +44,8 @@ public class PacienteService implements PacienteInterface {
             existingPaciente.setNumTarjeta(pacienteDTO.getNumTarjeta());
             existingPaciente.setTelefono(pacienteDTO.getTelefono());
             existingPaciente.setDireccion(pacienteDTO.getDireccion());
-            existingPaciente.setCitasPaciente(pacienteDTO.getCitas());
-            existingPaciente.setMedicos(pacienteDTO.getMedicos());
+//            existingPaciente.setCitasPaciente(pacienteDTO.getCitas());
+//            existingPaciente.setMedicos(pacienteDTO.getMedicos());
             return pacienteMapper.pacienteToPacienteDTO(pacienteRepository.save(existingPaciente));
         }
         return null;

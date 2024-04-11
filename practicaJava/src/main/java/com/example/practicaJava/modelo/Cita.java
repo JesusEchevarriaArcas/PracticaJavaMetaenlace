@@ -21,8 +21,8 @@ public class Cita {
     //geberatevalue incrementa el id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id;
-    @CreationTimestamp//actualiza la base de datos cada vez que se realize un cambio
-    @Temporal(TemporalType.TIMESTAMP)//indicar que se debe de mapear conun tipo fecha
+
+    @Temporal(TemporalType.TIMESTAMP)//indicar que se debe de mapear con un tipo fecha
     private Date fechaHora;
     private String motivoCita;
     private int attribute11;
